@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods for Adding CSS</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- internal css-->
+    <!-- 用于当前 HTML 页面中独有的样式，样式声明过多会导致 HTML 文件尺寸很大 -->
+    <style>
+        p {
+            background-color: green;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div>Style me via the external method!</div>
+    <p>I would like to be styled with the internal method, please.</p>
+    
+    <!-- inline css -->
+    <!-- 不推荐这种写法：
+        1. 过多样式声明会使 HTML 文件变得很大；
+        2. 样式难以复用；
+        3. inline css 会覆盖 external css 和 internal css 的写法 -->
+    <button style="background-color: orange; font-size: 18px">Inline Method</button>
+  </body>
+</html>

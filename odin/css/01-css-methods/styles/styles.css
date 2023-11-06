@@ -1,0 +1,10 @@
+/* external css */
+/* 优点：1. 使 HTML 文件更整洁；2. 多页面时便于样式复用 */
+div {
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    /* 取值范围是 1-1000，bold 的取值是 700。常用的取值范围是 100 ~ 900。 */
+    font-weight: bold;
+}
