@@ -1,20 +1,22 @@
-/* type selector */
+/* 类选择器 */
 .odd {
     background-color: rgb(255, 182, 193);
-    font-family: Verdana, "DejaVu Sans", serif;
+    /* 字体列表，浏览器会根据字体支持情况向后寻找，第一个不支持则尝试第二个，以此类推。 */
+    /* 每种字体都属于两个类别之一，要么是“字体家族名称”，如“Times New Roman”（由于单词之间有空格，我们使用引号），要么是“通用家族名称”，如衬线（通用家族名称从不使用引号） ）。 */
+    font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
+/* id 选择器 */
 #n2 {
     color: #0000ff;
     font-size: 36px;
 }
 
-.n3 {
+.adjust-font-size {
     font-size: 24px;
 }
 
 #n4 {
     background-color: lightgreen;
-    font-size: 24px;
     font-weight: bold;
 }
