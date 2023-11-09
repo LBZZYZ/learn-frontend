@@ -1,0 +1,17 @@
+/* grouping selector */
+/* 用逗号分隔的样式列表，可以定义一些共有属性，精简代码 */
+.left-group,
+.right-group {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+/* 特有属性再单独定义 */
+.left-group {
+    background-color: black;
+    color: #ffffff;
+}
+
+.right-group {
+    background-color: rgb(255, 255, 0);
+}
