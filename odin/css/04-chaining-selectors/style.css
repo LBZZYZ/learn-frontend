@@ -1,0 +1,14 @@
+/* chaining selectors */
+/* 类与类 .c1.c2 */
+/* 类与 id .c1#i1 */
+/* type selector 如 div 最多只出现一次，因为一个元素不可能同时拥有两种类型，不存在 divp 这种链式，选择器会试图去找 divp 这个元素，结果是找不到 */
+/* avatar 和 proportioned 两个类都有的元素会被选中 */
+.avatar.proportioned {
+    width: 300px;
+    height: auto;
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}
