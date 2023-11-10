@@ -1,0 +1,20 @@
+/* Descendent combinator */
+/* 只会选中声明中的最后一个，用空格分隔每个名称，类和类型都可以用在这里。
+div p 则代表选中祖先（无论是父母还是祖父母等）是 div 的 p 标签。即只要是被 div 标签包含的 p 标签都会被选中。
+链条长度没有限制，比如 .one .two .three .four 会应用到类包含 .four 的元素，
+这个元素有一个类包含 .three 的祖先，包含 .three 的元素又有一个类中包含 .two 的祖先，以此类推。 */
+div p {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 几种不同的实现:
+
+div > p
+div .text
+.container p
+.container .text
+
+*/
